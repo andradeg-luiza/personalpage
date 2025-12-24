@@ -15,7 +15,7 @@ export default function Projects() {
           flex flex-col md:flex-row gap-10
         "
       >
-        {/* Placeholder image */}
+        {/* Project Image */}
         <div className="md:w-1/2 w-full">
           <div
             className="
@@ -25,40 +25,46 @@ export default function Projects() {
             "
           >
             <img
-              src="/placeholder-project.png"
-              alt="Dino Expedition Preview"
+              src="/src/assets/images/placeholder.png"
+              alt="DinoExplorer Preview"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
 
-        {/* Content */}
+        {/* Project Content */}
         <div className="md:w-1/2 w-full flex flex-col justify-center">
           <h3 className="text-3xl font-semibold text-[var(--accent-green)] mb-4">
-            Dino Expedition
+            DinoExplorer: Chronicles of the Wild
           </h3>
 
           <p className="text-lg text-[var(--text-muted)] leading-relaxed mb-6">
-            Dino Expedition is an adventure game currently in development, focused on exploration,
-            survival, and discovery in a prehistoric world filled with dinosaurs. The project blends
-            immersive environments, engaging mechanics, and a strong visual identity to create a
-            unique gameplay experience.
+            DinoExplorer is a scientific exploration game where players travel through vibrant
+            prehistoric biomes to discover, study, and document real dinosaur species. Customize your
+            explorer, build emotional bonds with creatures, and complete the Primeval Encyclopedia
+            through realistic cards, dynamic weather, and immersive gameplay.
           </p>
 
-          {/* Tags */}
+          <ul className="list-disc list-inside text-[var(--text-muted)] text-base space-y-2 mb-6">
+            <li>🧬 Realistic dinosaur behavior and bonding system</li>
+            <li>📘 Scientific cards with accurate data and reconstructions</li>
+            <li>🌍 Biomes based on paleoclimate studies</li>
+            <li>🎮 Coming soon to Android and iOS</li>
+            <li>🎯 Final goal: complete the Primeval Encyclopedia</li>
+          </ul>
+
           <div className="flex flex-wrap gap-3 mb-8">
             <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
               Game Development
             </span>
             <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
-              Design & Worldbuilding
+              Scientific Design
             </span>
             <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
-              Creative Direction
+              Educational Gameplay
             </span>
           </div>
 
-          {/* Button */}
           <a
             href="#"
             className="
