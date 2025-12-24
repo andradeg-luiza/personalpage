@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Se quiser, pode importar seus estilos globais daqui */
+@import "./styles/globals.css";
+@import "./styles/animations.css";
