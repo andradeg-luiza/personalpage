@@ -1,80 +1,32 @@
-import { motion } from "framer-motion";
-
 export default function About() {
   return (
     <section
       id="about"
-      className="
-        py-32 px-6 max-w-7xl mx-auto
-        relative
-      "
+      className="soft-container py-24"
     >
-      {/* Glow decorativo */}
-      <div
-        className="
-          absolute -top-10 left-0 w-72 h-72
-          bg-pink-500/20 blur-[120px] rounded-full pointer-events-none
-        "
-      ></div>
+      <h2 className="text-4xl md:text-5xl font-bold mb-8 neon-heading text-center md:text-left">
+        About Me
+      </h2>
 
-      {/* Container animado */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true }}
-        className="flex flex-col md:flex-row items-start gap-16 relative z-10"
-      >
-        {/* Texto */}
-        <div className="flex-1">
-          <h2
-            className="
-              text-4xl font-bold text-white mb-6
-              drop-shadow-[0_0_12px_rgba(255,77,184,0.35)]
-            "
-          >
-            About <span className="text-pink-400">Me</span>
-          </h2>
+      <div className="max-w-3xl text-center md:text-left mx-auto space-y-6 text-[var(--text-muted)] text-lg leading-relaxed">
+        <p>
+          I'm Luiza, a front-end developer focused on building clean, modern, and meaningful digital
+          experiences. I believe that great interfaces are not just visually appealing — they tell a
+          story, guide users with intention, and reflect the identity behind the product.
+        </p>
 
-          <p className="text-gray-300 leading-relaxed text-lg">
-            I’m a Quality Assurance Engineer with over 5 years of experience
-            ensuring the reliability, performance, and scalability of digital
-            products. I work across manual and automated testing for web and
-            backend systems, focusing on preventing issues early and delivering
-            consistent, user‑ready software.
-          </p>
+        <p>
+          My work blends aesthetics with functionality, always aiming for clarity, accessibility, and
+          a strong sense of personality. I enjoy transforming ideas into interfaces that feel smooth,
+          intuitive, and visually consistent.
+        </p>
 
-          <p className="text-gray-400 leading-relaxed text-lg mt-4">
-            My background includes building automated test suites, validating
-            complex integrations, and collaborating daily in Agile environments
-            to maintain high standards in large‑scale applications.
-          </p>
-        </div>
-
-        {/* Foto / Placeholder estilizado */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          viewport={{ once: true }}
-          className="
-            flex-1 flex justify-center
-          "
-        >
-          <div
-            className="
-              w-64 h-64 rounded-xl
-              bg-gradient-to-br from-pink-500/30 to-purple-600/30
-              border border-white/10 backdrop-blur-xl
-              shadow-[0_0_25px_rgba(255,77,184,0.25)]
-              flex items-center justify-center
-              text-gray-300 text-sm
-            "
-          >
-            Your Photo Here
-          </div>
-        </motion.div>
-      </motion.div>
+        <p>
+          Beyond coding, I care deeply about design, user experience, and the emotional impact that
+          technology can create. Every project is an opportunity to craft something that feels both
+          human and technically refined.
+        </p>
+      </div>
     </section>
   );
 }
