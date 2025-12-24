@@ -64,47 +64,52 @@ Você pode usar exatamente assim no README.
 ```markdown
 ## 📂 Project Structure
 
-```
-src/
-├── assets/
-│   ├──images/
-│   └──icons/
+personal-portfolio/
+├─ src/
+│  ├─ assets/                   # Static files (images, icons)
+│  │  ├─ images/
+│  │  └─ icons/
+│  │
+│  ├─ components/               # Reusable UI and layout components
+│  │  ├─ ui/
+│  │  │  ├─ Button.tsx          # Generic button component
+│  │  │  └─ SectionTitle.tsx    # Section heading component
+│  │  └─ layout/
+│  │     ├─ Header.tsx          # Top navigation bar
+│  │     └─ Footer.tsx          # Page footer
+│  │
+│  ├─ sections/                 # Page sections
+│  │  ├─ Hero/
+│  │  │  └─ Hero.tsx            # Intro section with name and role
+│  │  ├─ About/
+│  │  │  └─ About.tsx           # Personal bio and background
+│  │  ├─ Skills/
+│  │  │  └─ Skills.tsx          # Technologies and tools
+│  │  ├─ Projects/
+│  │  │  └─ Projects.tsx        # Portfolio showcase
+│  │  └─ Contact/
+│  │     └─ Contact.tsx         # Contact form or links
+│  │
+│  ├─ hooks/                    # Custom React hooks
+│  │  ├─ useScrollToSection.ts  # Smooth scroll navigation
+│  │  └─ useTheme.ts            # Theme toggle logic
+│  │
+│  ├─ lib/                      # Utilities and constants
+│  │  ├─ analytics.ts           # Tracking and metrics
+│  │  └─ constants.ts           # Static values and config
+│  │
+│  ├─ styles/                   # Global styles and animations
+│  │  ├─ globals.css            # Tailwind base styles
+│  │  └─ animations.css         # Custom animations
+│  │
+│  ├─ App.tsx                   # Main app component
+│  └─ main.tsx                  # Application entry point
 │
-├──components/
-│   ├──ui/
-│   │   ├──Button.tsx
-│   │   └──SectionTitle.tsx
-│   └──layout/
-│       ├──Header.tsx
-│       └──Footer.tsx
-│
-├──sections/
-│   ├──Hero/
-│   │   └──Hero.tsx
-│   ├──About/
-│   │   └──About.tsx
-│   ├──Skills/
-│   │   └──Skills.tsx
-│   ├──Projects/
-│   │   └──Projects.tsx
-│   └──Contact/
-│       └──Contact.tsx
-│
-├──hooks/
-│   ├──useScrollToSection.ts
-│   └──useTheme.ts
-│
-├──lib/
-│   ├──analytics.ts
-│   └──constants.ts
-│
-├──styles/
-│   ├──globals.css
-│   └──animations.css
-│
-├──App.tsx
-└──main.tsx
-```
+├─ index.html                   # Root HTML file
+├─ package.json                 # Dependencies, scripts, metadata
+├─ postcss.config.cjs           # PostCSS configuration
+├─ tailwind.config.ts           # Tailwind configuration
+└─ README.md                    # Project documentation
 
 ---
 
