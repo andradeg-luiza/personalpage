@@ -13,7 +13,7 @@ export default function Contact() {
       <div
         className="
           absolute bottom-10 right-0 w-72 h-72
-          bg-pink-500/20 blur-[120px] rounded-full pointer-events-none
+          bg-[var(--accent-green)]/20 blur-[120px] rounded-full pointer-events-none
         "
       ></div>
 
@@ -25,11 +25,11 @@ export default function Contact() {
         viewport={{ once: true }}
         className="
           text-4xl font-bold text-white mb-12
-          drop-shadow-[0_0_12px_rgba(255,77,184,0.35)]
+          drop-shadow-[0_0_12px_rgba(62,243,192,0.35)]
           relative z-10
         "
       >
-        Get in <span className="text-pink-400">Touch</span>
+        Get in <span className="text-[var(--accent-green)]">Touch</span>
       </motion.h2>
 
       {/* Card de contato */}
@@ -40,32 +40,32 @@ export default function Contact() {
         viewport={{ once: true }}
         className="
           bg-white/5 backdrop-blur-xl
-          border border-white/10
+          border border-[var(--accent-green)]/20
           rounded-xl p-10
-          shadow-[0_0_20px_rgba(255,77,184,0.15)]
-          hover:shadow-[0_0_30px_rgba(255,77,184,0.35)]
+          shadow-[0_0_20px_rgba(62,243,192,0.15)]
+          hover:shadow-[0_0_30px_rgba(62,243,192,0.35)]
           transition-all
           relative z-10
           max-w-xl
         "
       >
-        <p className="text-gray-300 text-lg leading-relaxed mb-8">
+        <p className="text-[var(--text-muted)] text-lg leading-relaxed mb-8">
           I'm always open to discussing new opportunities, collaborations, or
           answering any questions you may have. Feel free to reach out.
         </p>
 
         {/* Botão de email */}
         <motion.a
-          href="mailto:seuemail@gmail.com"
+          href="mailto:andradeg.luiza@outlook.com"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
           className="
             inline-block
-            bg-gradient-to-r from-pink-500 to-purple-600
-            hover:from-pink-400 hover:to-purple-500
+            bg-gradient-to-r from-[var(--accent-green)]/70 to-[var(--accent-green)]
+            hover:from-[var(--accent-green)]/80 hover:to-[var(--accent-green)]
             text-white px-8 py-3 rounded-md text-lg font-semibold
-            shadow-[0_0_20px_rgba(255,77,184,0.45)]
-            hover:shadow-[0_0_30px_rgba(255,77,184,0.6)]
+            shadow-[0_0_20px_rgba(62,243,192,0.45)]
+            hover:shadow-[0_0_30px_rgba(62,243,192,0.6)]
             transition-all
           "
         >
