@@ -9,8 +9,8 @@ export default function Hero() {
       </h1>
 
       <p className="text-gray-300 text-lg md:text-xl mt-4 max-w-xl">
-        Frontend Developer passionate about creating beautiful and functional
-        digital experiences.
+        Quality Assurance Engineer specializing in automated and manual testing
+        for high‑performance systems.
       </p>
 
       <button

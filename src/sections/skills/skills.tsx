@@ -10,14 +10,14 @@ export default function Skills() {
         My <span className="text-pink-400">Skills</span>
       </h2>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         {skills.map((skill, index) => (
-          <span
+          <div
             key={index}
-            className="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium border border-pink-500/40 hover:bg-pink-500/30 transition-colors"
+            className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-pink-300 text-sm font-medium hover:bg-white/10 transition-colors"
           >
             {skill.name}
-          </span>
+          </div>
         ))}
       </div>
     </section>

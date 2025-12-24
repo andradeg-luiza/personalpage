@@ -10,17 +10,17 @@ export default function About() {
         </h2>
 
         <p className="text-gray-300 leading-relaxed text-lg">
-          I'm Luiza, a Frontend Developer passionate about crafting beautiful,
-          intuitive and high‑performance digital experiences.
+          I’m a Quality Assurance Engineer with over 5 years of experience
+          ensuring the reliability, performance, and scalability of digital
+          products. I work across manual and automated testing for web and
+          backend systems, focusing on preventing issues early and delivering
+          consistent, user‑ready software.
         </p>
 
         <p className="text-gray-400 leading-relaxed text-lg mt-4">
-          My focus is on building clean, accessible and scalable interfaces
-          using technologies like React, TypeScript and TailwindCSS.
-        </p>
-
-        <p className="text-gray-400 leading-relaxed text-lg mt-4">
-          When I'm not coding, I’m exploring design trends or studying UI/UX.
+          My background includes building automated test suites, validating
+          complex integrations, and collaborating daily in Agile environments to
+          maintain high standards in large‑scale applications.
         </p>
       </div>
 
