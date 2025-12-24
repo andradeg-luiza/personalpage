@@ -1,3 +1,6 @@
+# ✅ README.md — versão final e limpa
+
+```markdown
 # Personal Portfolio — React + TypeScript + Vite + Tailwind
 
 This project is my personal portfolio, built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
