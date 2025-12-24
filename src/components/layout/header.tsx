@@ -19,7 +19,7 @@ export default function Header() {
         fixed top-0 left-0 w-full z-50
         bg-black/30 backdrop-blur-xl
         border-b border-white/10
-        shadow-[0_0_20px_rgba(255,77,184,0.15)]
+        shadow-[0_0_20px_rgba(62,243,192,0.15)]
       "
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -32,9 +32,9 @@ export default function Header() {
               onClick={() => scrollTo(item.id)}
               className="
                 text-gray-300 text-sm font-medium
-                hover:text-pink-400
+                hover:text-[var(--accent-green)]
                 transition-all
-                hover:drop-shadow-[0_0_6px_rgba(255,77,184,0.6)]
+                hover:drop-shadow-[0_0_6px_rgba(62,243,192,0.6)]
               "
             >
               {item.label}
@@ -51,26 +51,26 @@ export default function Header() {
               key={i}
               className="
                 text-gray-300 text-lg cursor-pointer
-                hover:text-pink-400
+                hover:text-[var(--accent-green)]
                 transition-all
-                hover:drop-shadow-[0_0_6px_rgba(255,77,184,0.6)]
+                hover:drop-shadow-[0_0_6px_rgba(62,243,192,0.6)]
               "
             />
           ))}
 
-          {/* Botão */}
+          {/* Botão Let's Connect */}
           <button
             onClick={() => scrollTo("contact")}
             className="
-              bg-gradient-to-r from-pink-500 to-purple-600
-              hover:from-pink-400 hover:to-purple-500
+              bg-gradient-to-r from-[var(--accent-green)]/60 to-[var(--accent-green)]
+              hover:from-[var(--accent-green)]/80 hover:to-[var(--accent-green)]
               text-white px-4 py-2 rounded-md text-sm font-semibold
-              shadow-[0_0_15px_rgba(255,77,184,0.4)]
-              hover:shadow-[0_0_25px_rgba(255,77,184,0.6)]
+              shadow-[0_0_15px_rgba(62,243,192,0.4)]
+              hover:shadow-[0_0_25px_rgba(62,243,192,0.6)]
               transition-all
             "
           >
-            Let's Connect
+            Let’s Connect
           </button>
         </div>
       </div>
