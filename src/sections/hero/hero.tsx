@@ -18,12 +18,11 @@ export default function Hero() {
       {/* Texto */}
       <div className="text-center md:text-left">
         <h1 className="text-5xl md:text-6xl font-bold leading-tight neon-heading">
-          Desenvolvendo interfaces com identidade e precisão
+          Developing interfaces with identity and precision
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-[var(--text-muted)]">
-          Sou Luiza, desenvolvedora front-end apaixonada por criar experiências digitais
-          que unem estética, funcionalidade e personalidade.
+          I’m Luiza, a front-end developer passionate about creating digital experiences that combine aesthetics, functionality, and personality.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
