@@ -1,53 +1,51 @@
-# 🌐 Personal Portfolio — React + TypeScript + Vite + Tailwind
+# Personal Portfolio — React + TypeScript + Vite + Tailwind
 
-This is my personal portfolio built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
-It showcases my work, skills, and experience as a front-end developer, following a clean and scalable architecture.
+This project is my personal portfolio, built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
+It showcases my work, skills, and experience as a front‑end developer, following a clean and scalable architecture.  
+The goal is to maintain a modern, responsive, and accessible interface while keeping the codebase organized and easy to extend.
 
 ---
 
 ## 📌 Features
 
-- Responsive design with Tailwind CSS  
-- Modular and maintainable folder structure  
-- Reusable UI components  
-- Section-based layout for scalability  
-- Type-safe codebase with TypeScript  
-- Fast development with Vite  
-- Ready for deployment on Vercel, Netlify, or GitHub Pages
+- Fully responsive layout using **Tailwind CSS**
+- Modular and scalable folder architecture
+- Reusable UI components
+- Sections structured independently for maintainability
+- Smooth development experience with **Vite**
+- Type‑safe codebase with **TypeScript**
+- Ready for deployment on platforms like Vercel, Netlify, or GitHub Pages
 
 ---
 
 ## 🛠️ Tech Stack
 
-- ⚛️ React  
-- 🟦 TypeScript  
-- ⚡ Vite  
-- 🎨 Tailwind CSS
+- **React** — UI library  
+- **TypeScript** — Type safety  
+- **Vite** — Fast dev server and bundler  
+- **Tailwind CSS** — Utility‑first styling  
 
 ---
 
 ## ⚙️ Setup
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/<your-username>/personal-portfolio.git
 cd personal-portfolio
 ```
 
 ### 2. Install dependencies
-
 ```bash
 npm install
 ```
 
 ### 3. Start the development server
-
 ```bash
 npm run dev
 ```
 
-Access the project at:
+The project will be available at:
 
 ```
 http://localhost:5173
@@ -55,9 +53,9 @@ http://localhost:5173
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-<<<<<<< HEAD
+```text
 personal-portfolio/
 ├─ src/
 │  ├─ assets/                   # Static files (images, icons)
@@ -104,6 +102,7 @@ personal-portfolio/
 ├─ postcss.config.cjs           # PostCSS configuration
 ├─ tailwind.config.ts           # Tailwind configuration
 └─ README.md                    # Project documentation
+```
 
 ---
 
@@ -111,10 +110,10 @@ personal-portfolio/
 
 This project can be deployed on:
 
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
+- **Vercel**
+- **Netlify**
+- **GitHub Pages**
+- **Cloudflare Pages**
 
 Build command:
 
@@ -136,14 +135,12 @@ dist/
 - Add animations with Framer Motion  
 - Add project filtering  
 - Add contact form with backend integration  
-- Improve accessibility (ARIA, keyboard navigation)
+- Improve accessibility (ARIA, keyboard navigation)  
 
 ---
 
 ## 🧑‍💻 Author
 
-Created by **Luiza** — Front-end Developer.  
+Created by **Luiza** — Front‑end Developer.  
 This portfolio is part of my journey in building modern, accessible, and scalable web interfaces.
-<<<<<<< HEAD
-
 ```
