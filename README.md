@@ -66,44 +66,44 @@ Você pode usar exatamente assim no README.
 
 ```
 src/
-├── 📁 assets/
-│   ├── 📁 images/
-│   └── 📁 icons/
+├── assets/
+│   ├──images/
+│   └──icons/
 │
-├── 📁 components/
-│   ├── 📁 ui/
-│   │   ├── 📄 Button.tsx
-│   │   └── 📄 SectionTitle.tsx
-│   └── 📁 layout/
-│       ├── 📄 Header.tsx
-│       └── 📄 Footer.tsx
+├──components/
+│   ├──ui/
+│   │   ├──Button.tsx
+│   │   └──SectionTitle.tsx
+│   └──layout/
+│       ├──Header.tsx
+│       └──Footer.tsx
 │
-├── 📁 sections/
-│   ├── 📁 Hero/
-│   │   └── 📄 Hero.tsx
-│   ├── 📁 About/
-│   │   └── 📄 About.tsx
-│   ├── 📁 Skills/
-│   │   └── 📄 Skills.tsx
-│   ├── 📁 Projects/
-│   │   └── 📄 Projects.tsx
-│   └── 📁 Contact/
-│       └── 📄 Contact.tsx
+├──sections/
+│   ├──Hero/
+│   │   └──Hero.tsx
+│   ├──About/
+│   │   └──About.tsx
+│   ├──Skills/
+│   │   └──Skills.tsx
+│   ├──Projects/
+│   │   └──Projects.tsx
+│   └──Contact/
+│       └──Contact.tsx
 │
-├── 📁 hooks/
-│   ├── 📄 useScrollToSection.ts
-│   └── 📄 useTheme.ts
+├──hooks/
+│   ├──useScrollToSection.ts
+│   └──useTheme.ts
 │
-├── 📁 lib/
-│   ├── 📄 analytics.ts
-│   └── 📄 constants.ts
+├──lib/
+│   ├──analytics.ts
+│   └──constants.ts
 │
-├── 📁 styles/
-│   ├── 📄 globals.css
-│   └── 📄 animations.css
+├──styles/
+│   ├──globals.css
+│   └──animations.css
 │
-├── 📄 App.tsx
-└── 📄 main.tsx
+├──App.tsx
+└──main.tsx
 ```
 
 ---
