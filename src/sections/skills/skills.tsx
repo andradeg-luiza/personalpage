@@ -1,68 +1,90 @@
-import { motion } from "framer-motion";
-import { skills } from "../../assets/data/skills";
+const skillGroups = [
+  {
+    title: "Core Technologies",
+    items: [
+      "Semantic HTML",
+      "Modern CSS (Flexbox, Grid)",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Responsive Design",
+      "Accessibility (A11y)",
+    ],
+  },
+  {
+    title: "Frameworks & Tools",
+    items: [
+      "React (Hooks, Context, Custom Hooks)",
+      "Vite",
+      "Tailwind CSS",
+      "Styled Components",
+      "REST APIs",
+      "Figma",
+    ],
+  },
+  {
+    title: "Testing & Quality",
+    items: [
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Pactum JS",
+      "K6 (Performance)",
+      "Debugging & Troubleshooting",
+    ],
+  },
+  {
+    title: "Workflow & Best Practices",
+    items: [
+      "Git & GitHub",
+      "Clean Code",
+      "Component Architecture",
+      "Version Control",
+      "Agile Collaboration",
+      "Documentation",
+    ],
+  },
+];
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="
-        py-32 px-6 max-w-7xl mx-auto
-        relative
-      "
-    >
-      {/* Glow decorativo */}
-      <div
-        className="
-          absolute top-20 right-0 w-72 h-72
-          bg-purple-600/20 blur-[120px] rounded-full pointer-events-none
-        "
-      ></div>
+    <section id="skills" className="soft-container py-24">
+      <h2 className="text-4xl md:text-5xl font-bold mb-12 neon-heading text-center md:text-left">
+        Skills
+      </h2>
 
-      {/* Título animado */}
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="
-          text-4xl font-bold text-white mb-12
-          drop-shadow-[0_0_12px_rgba(255,77,184,0.35)]
-          relative z-10
-        "
-      >
-        My <span className="text-pink-400">Skills</span>
-      </motion.h2>
-
-      {/* Grid de skills */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
-        viewport={{ once: true }}
-        className="
-          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
-          gap-6 relative z-10
-        "
-      >
-        {skills.map((skill, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.2 }}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {skillGroups.map((group) => (
+          <div
+            key={group.title}
             className="
-              px-5 py-4 rounded-lg
+              border border-[var(--accent-green)]/30 rounded-2xl p-6
               bg-white/5 backdrop-blur-xl
-              border border-white/10
-              shadow-[0_0_15px_rgba(255,77,184,0.15)]
-              hover:shadow-[0_0_25px_rgba(255,77,184,0.35)]
-              transition-all
-              text-pink-300 font-medium text-sm
+              shadow-[0_0_25px_rgba(62,243,192,0.12)]
+              transition-all duration-300
+              hover:shadow-[0_0_35px_rgba(62,243,192,0.22)]
             "
           >
-            {skill.name}
-          </motion.div>
+            <h3 className="text-2xl font-semibold text-[var(--accent-green)] mb-4">
+              {group.title}
+            </h3>
+
+            <ul className="space-y-2 text-[var(--text-muted)] text-lg">
+              {group.items.map((item) => (
+                <li
+                  key={item}
+                  className="
+                    flex items-center gap-2
+                    before:content-[''] before:w-2 before:h-2
+                    before:rounded-full before:bg-[var(--accent-green)]
+                  "
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }
