@@ -1,67 +1,127 @@
-import profile from "../../assets/images/profile.jpg";
+import { motion } from "framer-motion";
+import profileImg from "../../assets/images/profile.jpg";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-12 pt-32 pb-40 soft-container"
+      className="
+        relative overflow-hidden
+        pt-40 pb-32 px-6
+        max-w-7xl mx-auto
+      "
     >
-      {/* Glow técnico esverdeado */}
+      {/* Glow bordô metálico atrás da foto */}
       <div
         className="
-          absolute inset-0 -z-10
-          bg-[radial-gradient(circle_at_60%_40%,rgba(62,243,192,0.22),transparent_70%)]
-          blur-3xl opacity-70
+          absolute right-0 top-1/2 -translate-y-1/2
+          w-[420px] h-[420px]
+          bg-[#5A1F2A]/40
+          blur-[140px]
+          rounded-full
+          pointer-events-none
         "
-      />
+      ></div>
 
-      {/* Texto */}
-      <div className="text-center md:text-left">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight neon-heading">
-          Developing interfaces with identity and precision
-        </h1>
-
-        <p className="mt-6 text-lg md:text-xl text-[var(--text-muted)]">
-          I’m Luiza, a front-end developer passionate about creating digital experiences that combine aesthetics, functionality, and personality.
-        </p>
-
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a
-            href="#projects"
-            className="
-              glass-panel glass-panel-hover
-              px-6 py-3 rounded-xl text-lg font-medium
-              transition-all duration-300
-              text-[var(--accent-green)]
-            "
-          >
-            View My Work
-          </a>
-
-          <a
-            href="#contact"
-            className="
-              px-6 py-3 rounded-xl text-lg font-medium
-              bg-gradient-to-r from-[var(--accent-green)] to-[var(--accent-green-dark)]
-              hover:opacity-90 transition-all duration-300
-              shadow-[0_0_20px_rgba(62,243,192,0.35)]
-              text-black font-semibold
-            "
-          >
-            Let's Connect
-          </a>
-        </div>
+      {/* Linhas tech sutis */}
+      <div className="absolute inset-0 opacity-[0.07] pointer-events-none">
+        <div className="absolute top-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#C97A50] to-transparent"></div>
+        <div className="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#C97A50] to-transparent"></div>
       </div>
 
-      {/* Foto */}
-      <div className="flex justify-center md:justify-end">
-        <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-[var(--accent-green)] shadow-[0_0_30px_rgba(62,243,192,0.25)]">
+      <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-16">
+
+        {/* Texto */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="max-w-xl"
+        >
+          <h1
+            className="
+              text-5xl md:text-6xl font-bold leading-tight
+              text-[#F2E9E4]
+            "
+          >
+            Quality Assurance Engineer <br />
+            <span className="text-[#C97A50]">& Software Developer</span>
+          </h1>
+
+          <p
+            className="
+              text-lg text-[#D9C7B8]/90 leading-relaxed mt-6
+            "
+          >
+            I build reliable, scalable and high‑quality digital experiences —
+            combining deep QA expertise with strong software engineering skills.
+            My work unites precision, strategy and creativity to deliver robust,
+            efficient and truly trustworthy solutions.
+          </p>
+
+          <p
+            className="
+              text-base text-[#C97A50] mt-4 font-medium tracking-wide
+            "
+          >
+            Creator of DinoLab — an interactive tech project blending science,
+            storytelling and modern development.
+          </p>
+
+          {/* Botões de currículo */}
+          <div className="flex flex-wrap gap-6 mt-10">
+            <a
+              href="/cv/cv_portuguese.pdf"
+              download
+              className="
+                px-8 py-3 rounded-md text-base font-semibold
+                bg-gradient-to-r from-[#5A1F2A] to-[#C97A50]
+                text-white
+                shadow-[0_0_20px_rgba(201,122,80,0.35)]
+                hover:shadow-[0_0_30px_rgba(201,122,80,0.55)]
+                transition-all
+              "
+            >
+              Currículo (PT)
+            </a>
+
+            <a
+              href="/cv/cv_english.pdf"
+              download
+              className="
+                px-8 py-3 rounded-md text-base font-semibold
+                border border-[#C97A50]/40
+                text-[#C97A50]
+                hover:bg-[#C97A50]/10
+                transition-all
+              "
+            >
+              Resume (EN)
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Foto */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          viewport={{ once: true }}
+          className="
+            relative w-[320px] h-[420px]
+            rounded-xl overflow-hidden
+            border border-[#C97A50]/30
+            shadow-[0_0_25px_rgba(90,31,42,0.35)]
+          "
+        >
           <img
-            src={profile}
-            alt="Luiza"
+            src={profileImg}
+            alt="Luiza Andrade"
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );
