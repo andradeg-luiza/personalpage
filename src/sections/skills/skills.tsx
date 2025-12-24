@@ -1,25 +1,68 @@
+import { motion } from "framer-motion";
 import { skills } from "../../assets/data/skills";
 
 export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 px-6 max-w-7xl mx-auto flex flex-col items-start"
+      className="
+        py-32 px-6 max-w-7xl mx-auto
+        relative
+      "
     >
-      <h2 className="text-4xl font-bold text-white mb-10">
-        My <span className="text-pink-400">Skills</span>
-      </h2>
+      {/* Glow decorativo */}
+      <div
+        className="
+          absolute top-20 right-0 w-72 h-72
+          bg-purple-600/20 blur-[120px] rounded-full pointer-events-none
+        "
+      ></div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      {/* Título animado */}
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="
+          text-4xl font-bold text-white mb-12
+          drop-shadow-[0_0_12px_rgba(255,77,184,0.35)]
+          relative z-10
+        "
+      >
+        My <span className="text-pink-400">Skills</span>
+      </motion.h2>
+
+      {/* Grid de skills */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+        viewport={{ once: true }}
+        className="
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+          gap-6 relative z-10
+        "
+      >
         {skills.map((skill, index) => (
-          <div
+          <motion.div
             key={index}
-            className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-pink-300 text-sm font-medium hover:bg-white/10 transition-colors"
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.2 }}
+            className="
+              px-5 py-4 rounded-lg
+              bg-white/5 backdrop-blur-xl
+              border border-white/10
+              shadow-[0_0_15px_rgba(255,77,184,0.15)]
+              hover:shadow-[0_0_25px_rgba(255,77,184,0.35)]
+              transition-all
+              text-pink-300 font-medium text-sm
+            "
           >
             {skill.name}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
