@@ -1,0 +1,39 @@
+/* Fonte padrão e reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Suaviza fontes em diferentes navegadores */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos globais do body */
+body {
+  background-color: #0f0f0f; /* fundo escuro elegante */
+  color: #ffffff; /* texto branco */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Remove sublinhado padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove bullets de listas */
+ul {
+  list-style: none;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
