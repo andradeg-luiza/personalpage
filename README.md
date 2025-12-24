@@ -125,7 +125,8 @@ personal-portfolio/
 │  │
 │  ├─ App.tsx                       # Main app component
 │  └─ main.tsx                      # React entry point
-│
+|  └─ index.css
+|
 ├─ cypress/
 │  ├─ e2e/
 │  │  └─ portfolio.cy.ts            # E2E tests for main user flows
