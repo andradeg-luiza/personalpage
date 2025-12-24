@@ -10,13 +10,13 @@ import Footer from "./components/layout/footer";
 export default function App() {
   return (
     <div className="relative min-h-screen">
-      {/* Luzes de fundo */}
+      {/* Luzes de fundo em tons esverdeados */}
       <div
         className="
           pointer-events-none fixed inset-0 -z-10 opacity-80
-          bg-[radial-gradient(circle_at_20%_20%,rgba(255,77,184,0.22),transparent_55%),
-             radial-gradient(circle_at_80%_10%,rgba(56,189,248,0.2),transparent_55%),
-             radial-gradient(circle_at_10%_80%,rgba(124,58,237,0.22),transparent_55%)]
+          bg-[radial-gradient(circle_at_20%_20%,rgba(62,243,192,0.18),transparent_55%),
+             radial-gradient(circle_at_80%_10%,rgba(0,180,140,0.15),transparent_55%),
+             radial-gradient(circle_at_10%_80%,rgba(0,255,200,0.12),transparent_55%)]
         "
       />
 

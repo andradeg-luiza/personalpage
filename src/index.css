@@ -2,59 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ========= */
-/* Base Theme */
-/* ========= */
-
 @layer base {
   :root {
-    --bg-main: #050509;
-    --bg-alt: #0b0b12;
-    --accent-pink: #ff4db8;
-    --accent-purple: #7c3aed;
-    --text-main: #f9fafb;
-    --text-muted: #9ca3af;
+    --bg-main: #0A1F1C;
+    --bg-alt: #0F2F2A;
+    --accent-green: #3EF3C0;
+    --accent-green-dark: #00B48C;
+    --text-main: #F2FFFC;
+    --text-muted: #9EBBB3;
   }
 
-  /* Corpo com fundo gradiente + leve textura */
   body {
     @apply text-white antialiased;
     background:
-      radial-gradient(circle at top left, rgba(255, 77, 184, 0.16), transparent 55%),
-      radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.18), transparent 55%),
-      radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 55%),
+      radial-gradient(circle at top left, rgba(62, 243, 192, 0.12), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(0, 180, 140, 0.14), transparent 55%),
       linear-gradient(145deg, var(--bg-main), var(--bg-alt));
     min-height: 100vh;
   }
 
-  /* Textos padrão */
   h1, h2, h3, h4 {
     letter-spacing: 0.02em;
   }
 
-  /* Noise overlay */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
-    opacity: 0.18;
+    opacity: 0.12;
     mix-blend-mode: soft-light;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='noStitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E");
     z-index: -1;
   }
 }
 
-/* =============== */
-/* Utilitários UX */
-/* =============== */
-
 @layer utilities {
   .glass-panel {
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
     box-shadow:
       0 0 25px rgba(0, 0, 0, 0.75),
-      0 0 26px rgba(255, 77, 184, 0.12);
+      0 0 26px rgba(62, 243, 192, 0.12);
   }
 
   .glass-panel-hover {
@@ -64,17 +52,11 @@
   .glass-panel-hover:hover {
     box-shadow:
       0 0 30px rgba(0, 0, 0, 0.85),
-      0 0 34px rgba(255, 77, 184, 0.28);
+      0 0 34px rgba(62, 243, 192, 0.25);
   }
 
   .neon-heading {
-    text-shadow: 0 0 14px rgba(255, 77, 184, 0.45);
-  }
-
-  .neon-border {
-    box-shadow:
-      0 0 0 1px rgba(255, 255, 255, 0.06),
-      0 0 18px rgba(255, 77, 184, 0.28);
+    text-shadow: 0 0 14px rgba(62, 243, 192, 0.35);
   }
 
   .soft-container {
