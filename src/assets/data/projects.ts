@@ -1,17 +1,8 @@
 export const projects = [
   {
-    title: "Personal Portfolio",
-    description: "A modern and responsive portfolio built with React and TailwindCSS.",
-    link: "#",
-  },
-  {
-    title: "E-commerce UI",
-    description: "A clean and intuitive e-commerce interface with product filtering.",
-    link: "#",
-  },
-  {
-    title: "Dashboard Analytics",
-    description: "A data visualization dashboard with charts and metrics.",
-    link: "#",
+    title: "DinoExpedition",
+    description:
+      "An immersive and interactive dinosaur exploration experience built with modern frontend technologies. Focused on animations, storytelling, and a smooth user journey.",
+    link: "", // GitHub link will be added later
   },
 ];

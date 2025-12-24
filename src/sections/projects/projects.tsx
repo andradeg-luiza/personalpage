@@ -7,31 +7,33 @@ export default function Projects() {
       className="py-24 px-6 max-w-7xl mx-auto flex flex-col items-start"
     >
       <h2 className="text-4xl font-bold text-white mb-10">
-        My <span className="text-pink-400">Projects</span>
+        Featured <span className="text-pink-400">Project</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      <div className="w-full">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md hover:bg-white/10 transition-all cursor-pointer"
+            className="bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-md hover:bg-white/10 transition-all"
           >
-            <h3 className="text-xl font-semibold text-white mb-3">
+            <h3 className="text-2xl font-semibold text-white mb-4">
               {project.title}
             </h3>
 
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
+            <p className="text-gray-300 text-base leading-relaxed mb-6">
               {project.description}
             </p>
 
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-400 hover:text-pink-300 text-sm font-medium transition-colors"
+            <button
+              disabled={!project.link}
+              className={`px-5 py-2 rounded-md text-sm font-medium transition-colors ${
+                project.link
+                  ? "bg-pink-500 hover:bg-pink-600 text-white"
+                  : "bg-gray-700 text-gray-400 cursor-not-allowed"
+              }`}
             >
-              View Project →
-            </a>
+              {project.link ? "View on GitHub →" : "Coming soon"}
+            </button>
           </div>
         ))}
       </div>
