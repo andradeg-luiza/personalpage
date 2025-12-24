@@ -1,82 +1,77 @@
-import { motion } from "framer-motion";
-import { projects } from "../../assets/data/projects";
-
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="
-        py-32 px-6 max-w-7xl mx-auto
-        relative
-      "
-    >
-      {/* Glow decorativo */}
+    <section id="projects" className="soft-container py-24">
+      <h2 className="text-4xl md:text-5xl font-bold mb-12 neon-heading text-center md:text-left">
+        Projects
+      </h2>
+
       <div
         className="
-          absolute top-10 left-0 w-72 h-72
-          bg-pink-500/20 blur-[120px] rounded-full pointer-events-none
-        "
-      ></div>
-
-      {/* Título */}
-      <motion.h2
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        viewport={{ once: true }}
-        className="
-          text-4xl font-bold text-white mb-12
-          drop-shadow-[0_0_12px_rgba(255,77,184,0.35)]
-          relative z-10
+          border border-[var(--accent-green)]/30 rounded-2xl p-8
+          bg-white/5 backdrop-blur-xl
+          shadow-[0_0_25px_rgba(62,243,192,0.12)]
+          transition-all duration-300
+          hover:shadow-[0_0_35px_rgba(62,243,192,0.22)]
+          flex flex-col md:flex-row gap-10
         "
       >
-        Featured <span className="text-pink-400">Project</span>
-      </motion.h2>
+        {/* Placeholder image */}
+        <div className="md:w-1/2 w-full">
+          <div
+            className="
+              w-full h-64 md:h-full rounded-xl overflow-hidden
+              border border-[var(--accent-green)]/40
+              shadow-[0_0_20px_rgba(62,243,192,0.15)]
+            "
+          >
+            <img
+              src="/placeholder-project.png"
+              alt="Dino Expedition Preview"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-      {/* Card do projeto */}
-      {projects.map((project, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          viewport={{ once: true }}
-          className="
-            bg-white/5 backdrop-blur-xl
-            border border-white/10
-            rounded-xl p-10
-            shadow-[0_0_20px_rgba(255,77,184,0.15)]
-            hover:shadow-[0_0_30px_rgba(255,77,184,0.35)]
-            transition-all
-            relative z-10
-          "
-        >
-          <h3 className="text-2xl font-semibold text-white mb-4">
-            {project.title}
+        {/* Content */}
+        <div className="md:w-1/2 w-full flex flex-col justify-center">
+          <h3 className="text-3xl font-semibold text-[var(--accent-green)] mb-4">
+            Dino Expedition
           </h3>
 
-          <p className="text-gray-300 text-base leading-relaxed mb-8">
-            {project.description}
+          <p className="text-lg text-[var(--text-muted)] leading-relaxed mb-6">
+            Dino Expedition is an adventure game currently in development, focused on exploration,
+            survival, and discovery in a prehistoric world filled with dinosaurs. The project blends
+            immersive environments, engaging mechanics, and a strong visual identity to create a
+            unique gameplay experience.
           </p>
 
-          {/* Botão */}
-          <motion.button
-            whileHover={{ scale: project.link ? 1.05 : 1 }}
-            whileTap={{ scale: project.link ? 0.97 : 1 }}
-            disabled={!project.link}
-            className={`
-              px-6 py-3 rounded-md text-sm font-semibold transition-all
-              ${
-                project.link
-                  ? "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white shadow-[0_0_20px_rgba(255,77,184,0.45)] hover:shadow-[0_0_30px_rgba(255,77,184,0.6)]"
-                  : "bg-gray-700 text-gray-400 cursor-not-allowed"
-              }
-            `}
+          {/* Tags */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
+              Game Development
+            </span>
+            <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
+              Design & Worldbuilding
+            </span>
+            <span className="px-4 py-1 rounded-full text-sm bg-[var(--accent-green)]/20 text-[var(--accent-green)]">
+              Creative Direction
+            </span>
+          </div>
+
+          {/* Button */}
+          <a
+            href="#"
+            className="
+              glass-panel glass-panel-hover
+              px-8 py-3 rounded-xl text-lg font-medium
+              text-[var(--accent-green)]
+              w-fit
+            "
           >
-            {project.link ? "View on GitHub →" : "Coming soon"}
-          </motion.button>
-        </motion.div>
-      ))}
+            View Details
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
