@@ -55,46 +55,55 @@ http://localhost:5173
 
 ## 📂 Project Structure
 
-```text
+Claro, Luiza — aqui está a **estrutura de pastas com visual mais organizado**, usando ícones e indentação clara para facilitar a leitura.
+
+Você pode usar exatamente assim no README.
+
+---
+
+```markdown
+## 📂 Project Structure
+
+```
 src/
-  assets/
-    images/
-    icons/
-
-  components/
-    ui/
-      Button.tsx
-      SectionTitle.tsx
-    layout/
-      Header.tsx
-      Footer.tsx
-
-  sections/
-    Hero/
-      Hero.tsx
-    About/
-      About.tsx
-    Skills/
-      Skills.tsx
-    Projects/
-      Projects.tsx
-    Contact/
-      Contact.tsx
-
-  hooks/
-    useScrollToSection.ts
-    useTheme.ts
-
-  lib/
-    analytics.ts
-    constants.ts
-
-  styles/
-    globals.css
-    animations.css
-
-  App.tsx
-  main.tsx
+├── 📁 assets/
+│   ├── 📁 images/
+│   └── 📁 icons/
+│
+├── 📁 components/
+│   ├── 📁 ui/
+│   │   ├── 📄 Button.tsx
+│   │   └── 📄 SectionTitle.tsx
+│   └── 📁 layout/
+│       ├── 📄 Header.tsx
+│       └── 📄 Footer.tsx
+│
+├── 📁 sections/
+│   ├── 📁 Hero/
+│   │   └── 📄 Hero.tsx
+│   ├── 📁 About/
+│   │   └── 📄 About.tsx
+│   ├── 📁 Skills/
+│   │   └── 📄 Skills.tsx
+│   ├── 📁 Projects/
+│   │   └── 📄 Projects.tsx
+│   └── 📁 Contact/
+│       └── 📄 Contact.tsx
+│
+├── 📁 hooks/
+│   ├── 📄 useScrollToSection.ts
+│   └── 📄 useTheme.ts
+│
+├── 📁 lib/
+│   ├── 📄 analytics.ts
+│   └── 📄 constants.ts
+│
+├── 📁 styles/
+│   ├── 📄 globals.css
+│   └── 📄 animations.css
+│
+├── 📄 App.tsx
+└── 📄 main.tsx
 ```
 
 ---
