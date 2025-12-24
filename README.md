@@ -1,149 +1,242 @@
-# ✅ README.md — versão final e limpa
-
-```markdown
 # Personal Portfolio — React + TypeScript + Vite + Tailwind
 
 This project is my personal portfolio, built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.  
-It showcases my work, skills, and experience as a front‑end developer, following a clean and scalable architecture.  
-The goal is to maintain a modern, responsive, and accessible interface while keeping the codebase organized and easy to extend.
+It showcases my profile, skills, projects, and work experience in a clean, modern, and scalable way.  
+The architecture is designed to be easy to maintain, extend, and test.
 
 ---
 
 ## 📌 Features
 
-- Fully responsive layout using **Tailwind CSS**
-- Modular and scalable folder architecture
-- Reusable UI components
-- Sections structured independently for maintainability
-- Smooth development experience with **Vite**
-- Type‑safe codebase with **TypeScript**
-- Ready for deployment on platforms like Vercel, Netlify, or GitHub Pages
+- Responsive layout built with **Tailwind CSS**
+- Clean and modular **React + TypeScript** architecture
+- Dedicated sections for **Profile**, **Skills**, **Projects**, **Experience**, and **Contact**
+- Reusable UI and layout components
+- Centralized static data (skills, projects, experience)
+- Custom hooks for navigation and theme handling
+- Automated testing:
+  - **Cypress** for front‑end E2E
+  - **Pactum** for API tests
+  - **k6** for performance tests
+- Ready for seamless deployment on **Vercel**
 
 ---
 
 ## 🛠️ Tech Stack
 
+### Frontend
+
 - **React** — UI library  
-- **TypeScript** — Type safety  
+- **TypeScript** — Type safety and better DX  
 - **Vite** — Fast dev server and bundler  
-- **Tailwind CSS** — Utility‑first styling  
+- **Tailwind CSS** — Utility‑first CSS framework  
+
+### Testing
+
+- **Cypress** — End‑to‑end and UI interaction testing  
+- **Pactum** — API and integration testing  
+- **k6** — Load and stress testing  
+
+### Deployment
+
+- **Vercel** — Zero‑config deploy for Vite + React apps  
 
 ---
 
 ## ⚙️ Setup
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/<your-username>/personal-portfolio.git
 cd personal-portfolio
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start the development server
+
 ```bash
 npm run dev
 ```
 
 The project will be available at:
 
-```
+```text
 http://localhost:5173
 ```
 
 ---
 
-## 📂 Project Structure
+## 📂 Project structure
 
 ```text
 personal-portfolio/
 ├─ src/
-│  ├─ assets/                   # Static files (images, icons)
-│  │  ├─ images/
-│  │  └─ icons/
+│  ├─ assets/
+│  │  ├─ images/                    # Profile and project images
+│  │  │  └─ profile.jpg
+│  │  ├─ icons/                     # SVG icons
+│  │  │  └─ react.svg
+│  │  └─ data/                      # Static data used in the UI
+│  │     ├─ skills.ts               # Skills list
+│  │     ├─ projects.ts             # Projects list
+│  │     └─ experience.ts           # Work experience timeline
 │  │
-│  ├─ components/               # Reusable UI and layout components
-│  │  ├─ ui/
-│  │  │  ├─ Button.tsx          # Generic button component
-│  │  │  └─ SectionTitle.tsx    # Section heading component
-│  │  └─ layout/
-│  │     ├─ Header.tsx          # Top navigation bar
-│  │     └─ Footer.tsx          # Page footer
+│  ├─ components/
+│  │  ├─ layout/                    # Layout-level components
+│  │  │  ├─ Header.tsx
+│  │  │  ├─ Footer.tsx
+│  │  │  └─ Layout.tsx              # Main layout wrapper
+│  │  └─ ui/                        # Reusable UI pieces
+│  │     ├─ Button.tsx
+│  │     ├─ SectionTitle.tsx
+│  │     ├─ Card.tsx
+│  │     └─ Badge.tsx
 │  │
-│  ├─ sections/                 # Page sections
+│  ├─ sections/                     # Page sections
 │  │  ├─ Hero/
-│  │  │  └─ Hero.tsx            # Intro section with name and role
+│  │  │  └─ Hero.tsx                # Intro, name, role, CTA
 │  │  ├─ About/
-│  │  │  └─ About.tsx           # Personal bio and background
+│  │  │  └─ About.tsx               # About me, background
 │  │  ├─ Skills/
-│  │  │  └─ Skills.tsx          # Technologies and tools
+│  │  │  └─ Skills.tsx              # Skills grid/badges
 │  │  ├─ Projects/
-│  │  │  └─ Projects.tsx        # Portfolio showcase
+│  │  │  └─ Projects.tsx            # Portfolio projects
+│  │  ├─ Experience/
+│  │  │  └─ Experience.tsx          # Work experience timeline
 │  │  └─ Contact/
-│  │     └─ Contact.tsx         # Contact form or links
+│  │     └─ Contact.tsx             # Contact info/form
 │  │
-│  ├─ hooks/                    # Custom React hooks
-│  │  ├─ useScrollToSection.ts  # Smooth scroll navigation
-│  │  └─ useTheme.ts            # Theme toggle logic
+│  ├─ hooks/                        # Custom React hooks
+│  │  ├─ useScrollToSection.ts      # Smooth scroll navigation
+│  │  └─ useTheme.ts                # Theme (light/dark) handling
 │  │
-│  ├─ lib/                      # Utilities and constants
-│  │  ├─ analytics.ts           # Tracking and metrics
-│  │  └─ constants.ts           # Static values and config
+│  ├─ utils/                        # Helper functions
+│  │  └─ scrollToId.ts              # Scroll to element by id
 │  │
-│  ├─ styles/                   # Global styles and animations
-│  │  ├─ globals.css            # Tailwind base styles
-│  │  └─ animations.css         # Custom animations
+│  ├─ styles/
+│  │  ├─ globals.css                # Global styles and Tailwind base
+│  │  └─ animations.css             # Optional custom animations
 │  │
-│  ├─ App.tsx                   # Main app component
-│  └─ main.tsx                  # Application entry point
+│  ├─ App.tsx                       # Main app component
+│  └─ main.tsx                      # React entry point
 │
-├─ index.html                   # Root HTML file
-├─ package.json                 # Dependencies, scripts, metadata
-├─ postcss.config.cjs           # PostCSS configuration
-├─ tailwind.config.ts           # Tailwind configuration
-└─ README.md                    # Project documentation
+├─ cypress/
+│  ├─ e2e/
+│  │  └─ portfolio.cy.ts            # E2E tests for main user flows
+│  ├─ fixtures/
+│  ├─ support/
+│  └─ cypress.config.ts
+│
+├─ tests/
+│  ├─ api/                          # Pactum API tests
+│  │  └─ api.test.ts
+│  └─ performance/                  # k6 performance tests
+│     └─ load-test.ts
+│
+├─ index.html                       # Root HTML file
+├─ package.json                     # Scripts and dependencies
+├─ postcss.config.cjs               # PostCSS configuration
+├─ tailwind.config.ts               # Tailwind configuration
+└─ README.md                        # Project documentation
 ```
 
 ---
 
-## 🚀 Deployment
+## 📜 NPM scripts (suggested)
 
-This project can be deployed on:
+These are typical scripts you might have in your `package.json`:
 
-- **Vercel**
-- **Netlify**
-- **GitHub Pages**
-- **Cloudflare Pages**
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx",
+    "test:api": "node tests/api/api.test.ts",
+    "test:perf": "k6 run tests/performance/load-test.ts",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  }
+}
+```
 
-Build command:
+---
+
+## 🚀 Deployment (Vercel)
+
+This project is optimized for **Vercel**:
+
+1. Push your code to GitHub.
+2. Go to [https://vercel.com](https://vercel.com).
+3. Click **"New Project"** and import your repository.
+4. Vercel will auto‑detect:
+   - Framework: **Vite**
+   - Build command: `npm run build`
+   - Output directory: `dist`
+5. Click **Deploy**.
+
+Each new push to the main branch will trigger a new deployment automatically.
+
+---
+
+## 🧪 Testing
+
+### Cypress — Frontend E2E
+
+Run Cypress tests:
 
 ```bash
-npm run build
+npm run cypress:open
 ```
 
-Output folder:
+or headless:
 
-```
-dist/
+```bash
+npm run cypress:run
 ```
 
 ---
 
-## 📈 Next Steps
+### Pactum — API Testing
+
+Run API tests:
+
+```bash
+npm run test:api
+```
+
+---
+
+### k6 — Performance / Load Testing
+
+Run performance tests:
+
+```bash
+npm run test:perf
+```
+
+---
+
+## 📈 Future improvements
 
 - Add dark/light theme toggle  
-- Add animations with Framer Motion  
-- Add project filtering  
-- Add contact form with backend integration  
-- Improve accessibility (ARIA, keyboard navigation)  
+- Add animations (e.g. with Framer Motion)  
+- Add filtering for projects (by tech, type, etc.)  
+- Integrate a real backend for the contact form  
+- Improve accessibility (ARIA roles, keyboard navigation)  
+- Increase and refine automated test coverage  
 
 ---
 
 ## 🧑‍💻 Author
 
-Created by **Luiza** — Front‑end Developer.  
-This portfolio is part of my journey in building modern, accessible, and scalable web interfaces.
+Created by **Luiza Gusmão de Andrade Lima** — QA Engineer.  
+This portfolio is part of my journey in building clean, modern, and well‑tested web interfaces.
 ```
