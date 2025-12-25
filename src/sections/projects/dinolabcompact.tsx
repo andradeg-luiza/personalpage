@@ -10,10 +10,10 @@ export default function DinoLabCompact() {
     >
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
-        {/* IMAGE COLUMN — no border */}
+        {/* IMAGE COLUMN — agora carregando do public */}
         <div className="w-full h-full">
           <img
-            src="src/assets/images/dinolab-hero.png"
+            src="/images/dinolab-hero.png"
             alt="Dino Expedition"
             className="w-full h-auto object-contain"
           />
