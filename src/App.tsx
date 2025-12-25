@@ -25,8 +25,8 @@ export default function App() {
       <main className="soft-container pt-28 pb-24 space-y-32">
         <Hero />
         <About />
-        <Skills />
         <Projects />
+        <Skills />
         <Experience />
         <Contact />
       </main>

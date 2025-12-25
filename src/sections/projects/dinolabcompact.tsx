@@ -10,7 +10,7 @@ export default function DinoLabCompact() {
     >
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
-        {/* IMAGE COLUMN — no border, no rounding */}
+        {/* IMAGE COLUMN — no border */}
         <div className="w-full h-full">
           <img
             src="src/assets/images/dinolab-hero.png"
@@ -32,25 +32,25 @@ export default function DinoLabCompact() {
           </h3>
 
           <p className="text-[#D9C7B8]/90 leading-relaxed">
-            A scientific exploration game where you travel through realistic
-            prehistoric biomes to discover, study, and document real dinosaur
-            species. Your ultimate goal is to complete the Primeval Encyclopedia.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+            sapien vel augue fermentum tincidunt. Integer id lorem non urna
+            facilisis volutpat.
           </p>
 
           <ul className="text-[#D9C7B8]/90 space-y-2 text-sm">
-            <li>• Customize your explorer and begin your journey</li>
-            <li>• Calm, observe, and bond with dinosaurs through the Enchantment System</li>
-            <li>• Collect Scientific Cards with real-world data and illustrations</li>
-            <li>• Explore biomes inspired by paleoclimate research</li>
-            <li>• Face dynamic weather events that change gameplay</li>
-            <li>• Build and upgrade your base: camp, lab, and care area</li>
-            <li>• Experience realistic dinosaur behavior and growth</li>
-            <li>• Progress through skills, tools, knowledge, and reputation</li>
-            <li>• Fair monetization: cosmetics only, no dinosaur skins</li>
+            <li>• Lorem ipsum dolor sit amet</li>
+            <li>• Consectetur adipiscing elit sed do</li>
+            <li>• Eiusmod tempor incididunt ut labore</li>
+            <li>• Dolore magna aliqua enim ad minim</li>
+            <li>• Quis nostrud exercitation ullamco</li>
+            <li>• Laboris nisi ut aliquip ex ea commodo</li>
+            <li>• Duis aute irure dolor in reprehenderit</li>
+            <li>• Excepteur sint occaecat cupidatat non</li>
+            <li>• Proident sunt in culpa qui officia</li>
           </ul>
 
           <p className="text-[#C97A50] font-medium pt-2">
-            Discover. Explore. Learn.
+            Lorem ipsum dolor sit amet.
           </p>
         </motion.div>
       </div>

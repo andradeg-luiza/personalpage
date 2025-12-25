@@ -36,7 +36,7 @@ export default function Projects() {
           Projects
         </motion.h2>
 
-        {/* DinoLab Showcase */}
+        {/* Dino Expedition Project */}
         <DinoLabCompact />
       </div>
     </section>
