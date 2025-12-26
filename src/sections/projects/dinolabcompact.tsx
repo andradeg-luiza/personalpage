@@ -10,7 +10,7 @@ export default function DinoLabCompact() {
     >
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
-        {/* IMAGE COLUMN — agora carregando do public */}
+        {/* IMAGE COLUMN */}
         <div className="w-full h-full">
           <img
             src="/images/dinolab-hero.png"
@@ -52,6 +52,21 @@ export default function DinoLabCompact() {
           <p className="text-[#C97A50] font-medium pt-2">
             Lorem ipsum dolor sit amet.
           </p>
+
+          {/* LINK SAIBA MAIS */}
+          <a
+            href="/projects/dinolab"
+            className="
+              inline-block mt-4 text-xl font-bold
+              text-[#C97A50] hover:text-[#F2E9E4]
+              transition-all
+              float-right
+              pr-1
+              drop-shadow-[0_0_6px_rgba(201,122,80,0.45)]
+            "
+          >
+            Learn More →
+          </a>
         </motion.div>
       </div>
     </section>
