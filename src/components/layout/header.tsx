@@ -1,11 +1,11 @@
-import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import useScrollToSection from "../../hooks/useScrollToSection";
 
 const navItems = [
   { label: "Home", id: "hero" },
   { label: "About", id: "about" },
-  { label: "Skills", id: "skills" },
   { label: "Projects", id: "projects" },
+  { label: "Skills", id: "skills" },
   { label: "Experience", id: "experience" },
   { label: "Contact", id: "contact" },
 ];
@@ -45,10 +45,13 @@ export default function Header() {
         {/* Social + CTA */}
         <div className="flex items-center gap-6">
 
-          {/* Ícones sociais */}
-          {[FaLinkedin, FaFacebook, FaInstagram].map((Icon, i) => (
-            <Icon
-              key={i}
+          {/* Ícone do LinkedIn com link */}
+          <a
+            href="https://www.linkedin.com/in/andradegluiza/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin
               className="
                 text-gray-300 text-lg cursor-pointer
                 hover:text-[var(--accent-green)]
@@ -56,7 +59,7 @@ export default function Header() {
                 hover:drop-shadow-[0_0_6px_rgba(62,243,192,0.6)]
               "
             />
-          ))}
+          </a>
 
           {/* Botão Let's Connect */}
           <button

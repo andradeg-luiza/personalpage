@@ -130,10 +130,10 @@ export default function Hero() {
           {/* Nome + Cargo */}
           <div className="mt-4 text-center">
             <h3 className="text-xl font-semibold text-[#F2E9E4]">
-              Luiza Andrade
+              Luiza Andrade Lima
             </h3>
             <p className="text-[#C97A50] text-sm tracking-wide">
-              Quality Assurance Engineer & Software Developer
+              QA Engineer & Software Developer
             </p>
           </div>
         </motion.div>
