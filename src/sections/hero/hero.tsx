@@ -130,7 +130,7 @@ export default function Hero() {
           {/* Nome + Cargo */}
           <div className="mt-4 text-center">
             <h3 className="text-xl font-semibold text-[#F2E9E4]">
-              Luiza Andrade Lima
+              Luiza Gusmão Lima
             </h3>
             <p className="text-[#C97A50] text-sm tracking-wide">
               QA Engineer & Software Developer
