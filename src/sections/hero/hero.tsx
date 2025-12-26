@@ -54,10 +54,10 @@ export default function Hero() {
               text-lg text-[#D9C7B8]/90 leading-relaxed mt-6
             "
           >
-            I build reliable, scalable and high‑quality digital experiences —
-            combining deep QA expertise with strong software engineering skills.
-            My work unites precision, strategy and creativity to deliver robust,
-            efficient and truly trustworthy solutions.
+            I’m a QA Engineer with 5+ years of experience ensuring reliability,
+            performance and usability in large-scale systems. I combine strong QA
+            expertise with modern frontend development skills to deliver stable,
+            scalable and user‑focused digital experiences.
           </p>
 
           <p
@@ -102,24 +102,40 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Foto */}
+        {/* Foto + Nome/Cargo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
           className="
-            relative w-[320px] h-[420px]
-            rounded-xl overflow-hidden
-            border border-[#C97A50]/30
-            shadow-[0_0_25px_rgba(90,31,42,0.35)]
+            flex flex-col items-center
           "
         >
-          <img
-            src={profileImg}
-            alt="Luiza Andrade"
-            className="w-full h-full object-cover"
-          />
+          <div
+            className="
+              relative w-[320px] h-[420px]
+              rounded-xl overflow-hidden
+              border border-[#C97A50]/30
+              shadow-[0_0_25px_rgba(90,31,42,0.35)]
+            "
+          >
+            <img
+              src={profileImg}
+              alt="Luiza Andrade"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Nome + Cargo */}
+          <div className="mt-4 text-center">
+            <h3 className="text-xl font-semibold text-[#F2E9E4]">
+              Luiza Andrade
+            </h3>
+            <p className="text-[#C97A50] text-sm tracking-wide">
+              Quality Assurance Engineer & Software Developer
+            </p>
+          </div>
         </motion.div>
 
       </div>
