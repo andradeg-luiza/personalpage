@@ -56,34 +56,33 @@ export default function About() {
           "
         >
           <p className="text-lg text-[#D9C7B8]/90 leading-relaxed mb-6">
-            I’m a Quality Assurance Engineer with a strong foundation in software
-            development — a combination that allows me to understand systems
-            deeply, anticipate failures, and build solutions that are not only
-            functional, but truly reliable.
+            I’m Luiza Gusmão Lima, a Quality Assurance Engineer and Software
+            Developer focused on building technology that is reliable,
+            intentional and genuinely impactful. My work is grounded in a
+            methodical, curious and analytical mindset — the kind that values
+            clarity, structure and long‑term quality over quick fixes.
           </p>
 
           <p className="text-lg text-[#D9C7B8]/90 leading-relaxed mb-6">
-            My experience spans manual and automated testing, API validation,
-            CI/CD pipelines, quality strategy, and technical analysis. I bring a
-            holistic view to the development lifecycle, ensuring that quality is
-            not a final step, but a continuous and integrated part of the
-            process.
+            Throughout my career, I’ve developed a strong interest in how
+            storytelling, design and engineering intersect. That curiosity led
+            me to create <span className="text-[#C97A50] font-semibold">Dino
+            Expedition</span>, a long‑term project where I explore world‑building,
+            scientific structure and modern development practices to craft an
+            experience that is both technical and creative. It represents the
+            type of work I aspire to continue building: thoughtful, polished and
+            driven by purpose.
           </p>
 
           <p className="text-lg text-[#D9C7B8]/90 leading-relaxed mb-6">
-            As a developer, I leverage my coding skills to create efficient test
-            automation, improve workflows, and collaborate closely with
-            engineering teams. My approach blends precision, curiosity, and
-            creativity — always aiming for scalable, maintainable, and elegant
-            solutions.
+            I believe quality is not just a phase of development — it’s a
+            philosophy. It shapes how systems evolve, how teams collaborate and
+            how users trust the products they interact with. Because of that, I
+            approach engineering with a balance of precision and creativity,
+            always aiming to deliver solutions that are stable, scalable and
+            meaningful.
           </p>
 
-          <p className="text-lg text-[#C97A50] leading-relaxed font-medium">
-            I’m also the creator of <span className="font-semibold">DinoLab</span>,
-            a unique tech project that merges science, storytelling, and modern
-            development — a space where I explore innovation, experimentation,
-            and the joy of building something truly original.
-          </p>
         </motion.div>
       </div>
     </section>
