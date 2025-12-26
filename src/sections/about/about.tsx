@@ -52,7 +52,8 @@ export default function About() {
             border border-[#C97A50]/25
             rounded-xl p-10
             shadow-[0_0_25px_rgba(90,31,42,0.25)]
-            max-w-4xl
+            w-full
+            max-w-none
           "
         >
           <p className="text-lg text-[#D9C7B8]/90 leading-relaxed mb-6">
@@ -66,8 +67,8 @@ export default function About() {
           <p className="text-lg text-[#D9C7B8]/90 leading-relaxed mb-6">
             Throughout my career, I’ve developed a strong interest in how
             storytelling, design and engineering intersect. That curiosity led
-            me to create <span className="text-[#C97A50] font-semibold">Dino
-            Expedition</span>, a long‑term project where I explore world‑building,
+            me to create <a href="#" className="text-[#C97A50] font-semibold">Dino
+            Expedition</a>, a long‑term project where I explore world‑building,
             scientific structure and modern development practices to craft an
             experience that is both technical and creative. It represents the
             type of work I aspire to continue building: thoughtful, polished and
@@ -83,6 +84,12 @@ export default function About() {
             meaningful.
           </p>
 
+          <p className="text-lg text-[#C97A50] leading-relaxed font-medium">
+            I’m also the creator of <span className="font-semibold">DinoLab</span>,
+            a unique tech project that merges science, storytelling, and modern
+            development — a space where I explore innovation, experimentation,
+            and the joy of building something truly original.
+          </p>
         </motion.div>
       </div>
     </section>

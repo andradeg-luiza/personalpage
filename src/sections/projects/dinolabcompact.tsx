@@ -4,7 +4,7 @@ export default function DinoLabCompact() {
   return (
     <section
       id="dinolab"
-      className="relative p-10 max-w-5xl mx-auto rounded-xl
+      className="relative py-32 px-6 max-w-7xl mx-auto
                  bg-white/10 backdrop-blur-xl border border-[#C97A50]/40
                  shadow-[0_0_35px_rgba(201,122,80,0.35)]"
     >
